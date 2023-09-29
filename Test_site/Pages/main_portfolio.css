@@ -1,0 +1,102 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.navbar{
+    background-color:  #333;
+    font-size: 18px;
+}
+.containers {
+    max-width: 96%;
+    margin: 1% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 18px;
+}
+.containers img{
+   width: 10%;
+   height: 10%;
+}
+footer{
+    background-color:  #333;
+    font-size: 13px;
+    width: 100%;
+}
+.service-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+.service-card:hover {
+    transform: scale(1.05);
+}
+.containern {
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.employee-card {
+    position: relative;
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.employee-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Псевдоэлементы для эффекта поднятия тени */
+.employee-card::before,
+.employee-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.employee-card::before {
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.employee-card::after {
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+.employee-card:hover::before,
+.employee-card:hover::after {
+    opacity: 1;
+}
+/* Стили для текста в карточке */
+.employee-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.employee-role {
+    font-size: 14px;
+    color: #777;
+}
+h2{
+    margin: 1%;
+}

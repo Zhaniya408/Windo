@@ -1,0 +1,29 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.navbar{
+    background-color:  #333;
+    font-size: 18px;
+}
+.container {
+    max-width: 97%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 18px;
+}
+footer{
+    background-color:  #333;
+    font-size: 13px;
+    width: 100%;
+}
+ul li {
+    list-style-type:  none;
+    margin-top: 1%;
+  }

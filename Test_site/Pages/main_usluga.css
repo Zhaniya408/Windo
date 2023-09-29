@@ -1,0 +1,47 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.navbar{
+    background-color:  #333;
+    font-size: 18px;
+}
+footer{
+    background-color:  #333;
+    font-size: 13px;
+    width: 100%;
+}
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 18px;
+}
+hr.loading {
+    width: 0; /* Начальная ширина линии (0) */
+    border: none;
+    border-top: 3px solid MidnightBlue; /* Цвет и толщина верхней грани (линии) */
+    animation: loadAnimation 3s ease-in-out forwards; /* Длительность анимации и режим */
+}
+
+@keyframes loadAnimation {
+    0% {
+        width: 0; /* Линия начинается с нулевой ширины */
+    }
+    100% {
+        width: 100%; /* Загруженная линия полностью видна */
+    }
+}
+h3{
+    font-weight: bold;
+}
+.d-flex img{
+ width: 20%;
+ height: 20%;
+}

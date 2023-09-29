@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Отзывы</title>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+        <link href="main_otziv.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+<!-- Шапочка -->
+            <div class="container-fluid">
+              <a class="navbar-brand">Windo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../index.html">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="usluga.html">Услуги</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Контакты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Отзывы</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+      <div class="container">
+      <h4>Поделитесь своим мнением о нашей компании. Как вам продукты? </h4>
+      <p>Вот мнение других пользователей</p>
+      </div>
+
+      <div class="container">
+      <!-- Вывод списка отзывов -->
+        <ul id="reviewList">
+          <li><i class="fa-solid fa-user"></i>  <strong> Дмитрий:</strong> Отличные ПО, пользуюсь на протяжении многих лет</li>
+          <li><i class="fa-solid fa-user"></i>   <strong>Александра:</strong>  Понравился отдел разработки, прислушиваются к пожеланиям пользователей</li>
+          <li><i class="fa-solid fa-user"></i>   <strong>Виктория:</strong> Цены намного приемлее, чем у конкурентов!</li>
+        </ul>
+      </div>
+      <!-- Форма отзыва  -->
+        <form id="reviewForm"  method="POST" autocomplete="on">
+          <div class="container">
+            <div class="mb-3 sticky-bottom">
+              <label for="name" class="form-label" >Имя</label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Дима" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label" >Отзыв</label>
+              <textarea id="message" class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Мне больше всего понравилось ..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить  <i class="fa-solid fa-share"></i></button>
+          </div>
+        </form>
+
+    <footer class=" text-white text-center py-3 position-relative bottom-0 ">
+            &copy; 2023 Windo. Все права защищены.
+        </footer>
+    
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+          <script src="https://kit.fontawesome.com/ecbc039510.js" crossorigin="anonymous"></script>  
+        <script src="script_otziv.js"></script>
+    </body>
+</html>
